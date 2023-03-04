@@ -20,6 +20,6 @@ tooling:
     dir: /app/backend
   drush:
     service: appserver
-    cmd: /app/web/vendor/bin/drush
+    cmd: /app/backend/vendor/bin/drush
     env:
       DRUSH_OPTIONS_URI: "http://dbook9.lndo.site/"
