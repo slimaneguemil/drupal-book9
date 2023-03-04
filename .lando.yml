@@ -2,6 +2,8 @@ name: dbook9
 recipe: drupal9
 config:
   webroot: backend/web
+  php: '8.1'
+  composer_version: '2.0.7'
 services:
   appserver:
     overrides:
@@ -15,7 +17,7 @@ services:
 tooling:
   composer:
     service: appserver
-    dir: /app/backend/web
+    dir: /app/backend
   drush:
     service: appserver
     cmd: /app/web/vendor/bin/drush
